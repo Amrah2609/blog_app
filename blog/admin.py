@@ -1,8 +1,14 @@
 from django.contrib import admin
-from blog.models import Article
+from blog.models import (
+    Header,
+    Blog,
+    About,
+    ContactMessage,
+    Contact
+)
 
-# Register your models here.
-
-@admin.register(Article)
-class ArticleAdmin(admin.ModelAdmin):
-    list_display = ["title","content"]
+admin.site.register(Header)
+admin.site.register(Blog)
+admin.site.register(About)
+admin.site.register(ContactMessage)
+admin.site.register(Contact)
